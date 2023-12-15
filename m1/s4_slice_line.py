@@ -20,7 +20,13 @@ print("The rest:", rest_5)
 
 # NumPy slices are views
 rest_5[2] += 20
-print("Changes in a slice are reflected in the orginal array:", a)
+print("Original and slices are all working on the same memory:", a)
+
+tail_3_copy = a[-3:].copy()
+print("Tail (copy):", tail_3_copy)
+
+a[7] -= 20
+print("A copy is not affected by changes on the original:", tail_3_copy)
 
 center = a[3:-3]
 print("The central part:", center)
