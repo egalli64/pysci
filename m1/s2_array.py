@@ -1,37 +1,50 @@
+"""
+Python and Science
+
+https://github.com/egalli64/pysci
+
+Module 1 - NumPy
+
+The ndarray
+"""
 import numpy as np
 
-a1 = [x for x in range(1, 11)]
-print(a1)
-print(len(a1))
+print("Introducing NumPy version", np.__version__)
 
-a2 = np.arange(1, 11)
-print(a2)
-print(f"{a2.ndim} dimension(s), base type {a2.dtype}, size {a2.size}, shape {a2.shape}")
+# a native list (of anything)
+list = [x for x in range(3)]
+list.append("42")
+print("A native Python list:", list)
 
-b1 = [x / 10 for x in range(10, 21)]
-print(b1)
+if isinstance(list[-1], str):
+    # example with native array
+    from array import array
 
-b2 = np.arange(1.0, 2.1, 0.1)
-print(b2, b2.dtype)
+    # arrays are homogeneous, comment next line to get a TypeError
+    del list[-1]
 
-b3 = np.array(b1)
-print(b3, b3.dtype)
+    # a native int array
+    native_array = array("i", list)
+    print("A native Python array:", native_array)
 
-# passing the required base type to the ctor
-b4 = np.array(b1, np.float32)
-print(b4, b4.dtype)
+# NumPy integer ndarray (homogeneous)
+a = np.array([1, 2, 3])
+print(f"An {a.dtype} {type(a)} sized {a.size}: {a}")
 
-c1 = [0] * 10
-print(c1)
+# NumPy tries to understand which type use for array
+a2 = np.array([1, 2, 10 / 3])
+print(f"A {a2.dtype} {type(a2)}: {a2}")
 
-c2 = np.zeros(10, np.int32)
-print(c2)
+# requiring a base type
+a3 = np.array([1, 2, 3], dtype=float)
+print(f"Another {a3.dtype} {type(a3)}: {a3}")
 
-d = np.zeros((2, 5))
-print(d, d.dtype)
+# matrices
+m1 = np.array([range(i, i + 3) for i in range(3)])
+print(f"An {m1.dtype} {type(m1)} matrix shaped {m1.shape}:\n", m1)
 
-e = np.ones((3, 3), np.int32)
-print(e)
+m2 = np.array([[1, 2], [3, 4], [5, 6]])
+print(f"An {m2.dtype} {type(m2)} matrix shaped {m2.shape}:\n", m2)
 
-f = np.random.random((4, 3))
-print(f)
+m3 = np.array([[1, 2, 3], [4, 5, 6]], dtype=complex)
+print(f"A {m3.dtype} {type(m3)} matrix shaped {m3.shape}:\n", m3)
