@@ -15,6 +15,10 @@ print("A matrix:\n", m)
 top_left = m[:2, :3]
 print("First two rows, first two columns:\n", top_left)
 
+# NumPy slices are views
+top_left[0, 1] += 40
+print("The original matrix has changed:", m[0])
+
 alt_col = m[:, ::2]
 print("All rows, alternate columns:\n", alt_col)
 

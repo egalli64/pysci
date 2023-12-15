@@ -18,6 +18,10 @@ print("Head:", head_5)
 rest_5 = a[5:]
 print("The rest:", rest_5)
 
+# NumPy slices are views
+rest_5[2] += 20
+print("Changes in a slice are reflected in the orginal array:", a)
+
 center = a[3:-3]
 print("The central part:", center)
 
