@@ -16,6 +16,9 @@ print("Two arrays:", a1, a2)
 ac = np.concatenate([a1, a2])
 print("Concatenated:", ac)
 
+ac = np.append(ac, 42)
+print("Append single value:", ac)
+
 m1 = np.array([[1, 2, 3], [3, 4, 5]])
 m2 = np.array([[5, 6, 7], [7, 8, 9]])
 print(f"Two matrices:\n{m1}\n{m2}")
