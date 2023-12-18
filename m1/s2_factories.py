@@ -8,45 +8,46 @@ Module 1 - NumPy
 Factories for ndarray
 """
 import numpy as np
+from s2_ndarray_checker import check
 
-a_zeros = np.zeros(6)
-print(f"All-zero {a_zeros.dtype} {type(a_zeros)} shaped {a_zeros.shape}:", a_zeros)
+print("*** zeros")
+check(np.zeros(6))
 
-a_ones = np.ones((3, 2), dtype=int)
-print(f"All-one {a_ones.dtype} {type(a_ones)} shaped {a_ones.shape}:\n", a_ones)
+print("*** ones")
+check(np.ones((3, 2), dtype=int))
 
-m_full = np.full((2, 2, 2), 42, int)
-print(f"All-42 {m_full.dtype} {type(m_full)} shaped {m_full.shape}:\n", m_full)
+print("*** full")
+check(np.full((2, 2, 2), 42, int))
 
-a_ranged_x = np.array(range(2, 11, 2))
-print(f"Ranged {a_ranged_x.dtype} array:", a_ranged_x)
+print("*** array constructor + standard range")
+check(np.array(range(2, 11, 2)))
 
-a_ranged = np.arange(2, 11, 2)
-print(f"Ranged {a_ranged.dtype} array:", a_ranged)
+print("*** arange")
+check(np.arange(2, 11, 2))
 
-a_ranged_f = np.arange(1.0, 1.51, 0.1)
-print(f"Ranged {a_ranged_f.dtype} array:", a_ranged_f)
+print("*** arange on floats")
+check(np.arange(1.0, 1.51, 0.1))
 
-a_lin = np.linspace(2, 10, 5, dtype=int)
-print(f"Linearly spaced {a_lin.dtype} array:", a_lin)
+print("*** linear space, 5 integers in [2, 10]")
+check(np.linspace(2, 10, 5, dtype=int))
 
-a_lin_f = np.linspace(1.0, 1.5, 6)
-print(f"Linearly spaced {a_lin_f.dtype} array:", a_lin_f)
+print("*** linear space, 6 values in [1.0, 1.5]")
+check(np.linspace(1.0, 1.5, 6))
 
-a_log = np.logspace(0, 2, 5)
-print(f"Logarithmically spaced array:", a_log)
+print("*** logarithmic space, 5 values in [10**0, 10**2]")
+check(np.logspace(0, 2, 5))
 
-a_rand = np.random.random(3)
-print("Random (uniform distribution) array:", a_rand)
+print("*** Three random values (uniform distribution)")
+check(np.random.random(3))
 
-a_normal = np.random.normal(loc=0, scale=1, size=3)
-print("Random (normal distribution) array:", a_normal)
+print("*** Three random values (normal distribution, mean 0, standard deviation 1)")
+check(np.random.normal(loc=0, scale=1, size=3))
 
-a_randint = np.random.randint(low=1, high=11, size=3)
-print("Random integer in [1, 10] array:", a_randint)
+print("*** Three random values (discrete uniform distribution)")
+check(np.random.randint(low=1, high=11, size=3))
 
-m_id = np.eye(3)
-print(f"Identity matrix shaped {m_id.shape}:\n", m_id)
+print("*** Identity matrix 3")
+check(np.eye(3))
 
-a_uninit = np.empty(5, int)
-print("An uninitialized array:", a_uninit)
+print("*** An uninitialized array sized 5")
+check(np.empty(5, int))
