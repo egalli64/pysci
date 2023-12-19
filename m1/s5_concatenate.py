@@ -18,7 +18,7 @@ ac = np.concatenate((a1, a2))
 print("Array concatenation:", ac)
 print("Concatenating array and iterable:", np.concatenate((a1, (8, 11, 23))))
 
-# append a single value to an array
+# "append" a single value to an array (not in-place)
 ac = np.append(ac, 42)
 print("Append single value:", ac)
 
