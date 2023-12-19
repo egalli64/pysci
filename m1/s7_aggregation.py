@@ -20,6 +20,11 @@ print(f"sum is {a.sum()} and prod is {a.prod()}")
 print(f"min is {a.min()} at {a.argmin()}, max is {a.max()} at {a.argmax()}")
 print(f"mean is {a.mean():.2f}, std dev {a.std():.2f}, variance {a.var():.2f}")
 
+print("is _any_ element even?", np.any(a % 2 == 0))
+print("is _any_ element even (by reduce)?", np.logical_or.reduce(a % 2 == 0))
+print("are _all_ elements even?", np.all(a % 2 == 0))
+print("are _all_ elements even (by reduce)?", np.logical_and.reduce(a % 2 == 0))
+
 print(f"Cumulative sum on {a} is", np.add.accumulate(a))
 print(f"Cumulative division on {a} is", np.divide.accumulate(a))
 print(f"cumsum is {a.cumsum()}, cumprod is {a.cumprod()}")
