@@ -7,7 +7,7 @@ Module 1 - NumPy
 
 Universal Functions
 
-Boolean Logic
+Relational operators
 """
 import numpy as np
 
