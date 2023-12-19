@@ -12,13 +12,14 @@ Exponential, logarithmic, trigonometry
 import numpy as np
 
 xs = np.arange(1, 5)
-print("xs is", xs)
+ys = np.arange(4, 0, -1)
+print(f"xs is {xs} and ys is {ys}")
 
-print("xs ** 2:", xs**2, np.power(xs, 2))
+print("x ** y:", xs**ys, np.power(xs, ys))
 print("2 ** xs:", 2**xs, np.power(2, xs))
 
 print("e^x", np.exp(xs), np.e**xs)
-print("2^x", np.exp2(xs), 2**xs, np.power(2, xs))
+print("2^y", np.exp2(xs), 2**xs, np.power(2, xs))
 
 xs = np.append(xs, (10, 100))
 print("now xs is", xs)
