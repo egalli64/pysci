@@ -29,11 +29,6 @@ print("How many even values in a?", np.sum(a % 2 == 0))
 print("How many m < 5 in each column?", np.sum(m < 5, axis=0))
 print("How many m < 5 in each row?", np.sum(m < 5, axis=1))
 
-# any and all
-print("Any value in a < 5?", np.any(a < 5))
-print("All values in m >= 3?", np.all(m >= 3))
-print("All values in m > 1 (by row)?", np.all(m > 1, axis=1))
-
 # mask
 print("Show a > 5", a[a > 5])
 print("Show a <= 5", a[a <= 5])
