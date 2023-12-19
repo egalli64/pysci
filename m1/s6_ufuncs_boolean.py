@@ -5,6 +5,8 @@ https://github.com/egalli64/pysci
 
 Module 1 - NumPy
 
+Universal Functions
+
 Boolean Logic
 """
 import numpy as np
