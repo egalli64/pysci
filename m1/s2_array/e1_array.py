@@ -8,14 +8,12 @@ Module 1 - NumPy
 The ndarray
 """
 import numpy as np
-from s2_ndarray_checker import check
-
-print("Using NumPy version", np.__version__)
+from ndarray_checker import check
 
 # a native list (of anything)
 list = [x for x in range(10)]
 list[-1] = "42"
-print(f"{list} is an object of type {type(list)}")
+print(f"An object of type {type(list)}: {list}")
 
 if isinstance(list[-1], str):
     # Python native array
@@ -26,7 +24,7 @@ if isinstance(list[-1], str):
 
     # a native int array
     native_array = array("i", list)
-    print(f"{native_array} is an object of type {type(native_array)}")
+    print(f"An object of type {type(native_array)}: {native_array}")
 
 
 # NumPy unicode-32 string ndarray (forced to be homogeneous)

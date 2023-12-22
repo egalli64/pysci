@@ -8,7 +8,7 @@ Module 1 - NumPy
 Factories for ndarray
 """
 import numpy as np
-from s2_ndarray_checker import check
+from ndarray_checker import check
 
 print("*** zeros")
 check(np.zeros(6))
