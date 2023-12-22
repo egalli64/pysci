@@ -15,7 +15,7 @@ print(f"First die is {single_throw[0]}, last one is {single_throw[-1]}")
 
 two_throws = np.random.randint(1, 7, size=(2, 3))
 print("Two throws:\n", two_throws)
-
+# use a tuple (couple) to describe i and j in a two dimensional array
 print("First and last die in the first throw:", two_throws[0, 0], two_throws[0, -1])
 print("First and last die in the last throw:", two_throws[-1, 0], two_throws[-1, -1])
 
