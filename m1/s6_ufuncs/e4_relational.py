@@ -17,18 +17,19 @@ print("a > 5:", a > 5)
 print("a <= 3:", a <= 3)
 print("a == 6:", a == 6)
 print("a % 2 == 0:", a % 2 == 0)
+print()
 
 m = a.reshape(3, 4)
-print(m)
-print("m != 6:\n", m != 1)
+print(m, "array a reshaped to", m.shape)
+print(m != 1, "m != 1\n")
 
 # Since True == 1 and False == 0:
 print("Count a > 5:", np.count_nonzero(a > 5))
 print("Count a <= 5:", np.count_nonzero(a <= 5))
-print("How many even values in a?", np.sum(a % 2 == 0))
-print("How many m < 5 in each column?", np.sum(m < 5, axis=0))
-print("How many m < 5 in each row?", np.sum(m < 5, axis=1))
+print("Count even values in a by sum()", np.sum(a % 2 == 0))
+print("Count m < 5 in each column by sum()", np.sum(m < 5, axis=0))
+print("Count m < 5 in each row by sum()", np.sum(m < 5, axis=1))
 
-# mask
-print("Show a > 5", a[a > 5])
-print("Show a <= 5", a[a <= 5])
+print("\nMask to extract a copy of elements respecting a relation")
+print("a > 5:", a[a > 5])
+print("a <= 5:", a[a <= 5])
