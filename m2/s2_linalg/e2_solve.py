@@ -20,3 +20,4 @@ print(solution)
 
 # proof that it works
 print("Is a dot solution equal to b?", np.all(a.dot(solution) == b))
+# print("Is a @ solution equal to b?", np.all(a @ solution == b))
