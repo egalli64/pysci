@@ -5,7 +5,7 @@ https://github.com/egalli64/pysci
 
 Module 1 - NumPy
 
-Universal Functions
+More Universal Functions
 
 Trigonometry
 """
