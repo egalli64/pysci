@@ -37,17 +37,18 @@ check(np.linspace(1.0, 1.5, 6))
 print("*** logarithmic space, 5 values in [10**0, 10**2]")
 check(np.logspace(0, 2, 5))
 
-print("*** Three random values (uniform distribution)")
-check(np.random.random(3))
-
-print("*** Three random values (normal distribution, mean 0, standard deviation 1)")
-check(np.random.normal(loc=0, scale=1, size=3))
-
-print("*** Three random values (discrete uniform distribution)")
-check(np.random.randint(low=1, high=11, size=3))
-
 print("*** Identity matrix 3")
 check(np.eye(3))
 
 print("*** An uninitialized array sized 5")
 check(np.empty(5, int))
+
+# random
+print("*** Three random values (uniform distribution)")
+check(np.random.random(3))
+
+print("*** Three random values (discrete uniform distribution)")
+check(np.random.randint(low=1, high=11, size=3))
+
+print("*** Three random values (normal distribution, mean 0, standard deviation 1)")
+check(np.random.normal(loc=0, scale=1, size=3))
