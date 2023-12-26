@@ -8,12 +8,12 @@ Module 2 - SciPy
 Linear Algebra - inverse
 """
 import numpy as np
-from scipy import linalg
+from scipy import linalg as la
 
 a = np.array([[1, 3, 5], [2, 5, 1], [2, 3, 8]])
 print(a, "is a\n")
 
-inv_a = linalg.inv(a)
+inv_a = la.inv(a)
 print(inv_a, "is a ^ -1 (inverse)\n")
 
 # proof that it works
