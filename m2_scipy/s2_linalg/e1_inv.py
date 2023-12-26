@@ -16,8 +16,7 @@ print(a, "is a\n")
 inv_a = linalg.inv(a)
 print(inv_a, "is a ^ -1 (inverse)\n")
 
-# proof that it works: A dot A^-1 is the identity matrix
-# m_id = a @ inv_a
-m_id = a.dot(inv_a)
-print(m_id, "is a dot a^-1\n")
-print(np.round(m_id, 15), "(rounded)")
+# proof that it works
+m_id = a @ inv_a
+print(m_id, "is a @ a^-1\n")
+print("Is a @ a^-1 close enough to the identity matrix?", np.allclose(m_id, np.eye(3)))
