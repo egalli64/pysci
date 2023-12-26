@@ -7,7 +7,7 @@ Module 1 - NumPy
 
 More Universal Functions
 
-Norm
+linalg - norm
 """
 import numpy as np
 from numpy import linalg as la
