@@ -3,7 +3,7 @@ Python and Science
 
 https://github.com/egalli64/pysci
 
-Module 3 - Pandas
+Module 3 - pandas
 
 Hello
 """
