@@ -3,7 +3,7 @@ Python and Science
 
 https://github.com/egalli64/pysci
 
-Module 3 - Matplotlib
+Module 4 - Matplotlib
 
 Draw a first line graph
 """
