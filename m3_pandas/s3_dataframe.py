@@ -60,3 +60,6 @@ print(df2)
 print("\nAssigning a series to a column")
 df2["debt"] = pd.Series([-1.2, -1.5, -1.7], index=[2, 4, 5])
 print(df2)
+
+print()
+df.info()
