@@ -5,13 +5,11 @@ https://github.com/egalli64/pysci
 
 Module 4 - Matplotlib
 
-Draw a first line graph
+Draw a simple line graph - parabola
 """
 import matplotlib.pyplot as plt
 import numpy as np
 
-xs = np.linspace(0, 2 * np.pi, 200)
-ys = np.sin(xs)
-
-plt.plot(xs, ys)
+xs = np.linspace(-5, 5, 100)
+plt.plot(xs, (lambda x: x**2)(xs))
 plt.show()
