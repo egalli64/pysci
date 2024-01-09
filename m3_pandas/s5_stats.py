@@ -69,3 +69,9 @@ print("petal width only:", pw_col.nunique())
 
 print("\nReturn unique values in species")
 print(iris["species"].unique())
+
+print("\nReturn count values for species")
+print(iris["species"].value_counts())
+
+print("\nReturn count values for iris")
+print(iris.value_counts())
