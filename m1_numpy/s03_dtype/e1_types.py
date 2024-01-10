@@ -41,11 +41,15 @@ print(f"A {a_int_64.dtype} array:", a_int_64)
 a_float = np.array([0.42, 27, -23], dtype=float)
 print(f"A {a_float.dtype} array:", a_float)
 
-a_float_np = np.array([0.42, 27, -23], dtype=np.float_)
+# np.float_ will be removed in NumPy 2.0 Use numpy.float64 instead
+# a_float_np = np.array([0.42, 27, -23], dtype=np.float_)
+a_float_np = np.array([0.42, 27, -23], dtype=np.float64)
 print(f"A {a_float.dtype} array:", a_float_np)
 
 a_complex = np.array([0.42, 27, -23], dtype=complex)
 print(f"A {a_complex.dtype} array:", a_complex)
 
-a_complex_np = np.array([0.42, 27, -23], dtype=np.complex_)
+# np.complex_ will be removed in NumPy 2.0. Use numpy.complex128 instead
+# a_complex_np = np.array([0.42, 27, -23], dtype=np.complex_)
+a_complex_np = np.array([0.42, 27, -23], dtype=np.complex128)
 print(f"A {a_complex.dtype} array:", a_complex_np)
