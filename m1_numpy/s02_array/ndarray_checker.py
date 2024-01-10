@@ -17,7 +17,7 @@ def check(a: np.ndarray) -> None:
         print(f"with {a.size} elements,", end=" ")
         print(f"shaped {a.shape}", end=" ")
         print(f"total byte size is {a.nbytes}")
-    except:
+    except AttributeError:
         print(f"{a} is not an ndarray")
 
 if __name__ == "__main__":
