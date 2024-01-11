@@ -5,7 +5,7 @@ https://github.com/egalli64/pysci
 
 Module 4 - Matplotlib
 
-Draw a simple scatter plot
+Draw a simple scatter plot from DataFrame columns
 Requires tips.csv from https://github.com/mwaskom/seaborn-data
 """
 import matplotlib.pyplot as plt
