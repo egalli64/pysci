@@ -5,7 +5,7 @@ https://github.com/egalli64/pysci
 
 Module 4 - Matplotlib
 
-Draw a simple histogram
+Draw a simple histogram from a DataFrame column
 Requires iris.csv from https://github.com/mwaskom/seaborn-data
 """
 import matplotlib.pyplot as plt

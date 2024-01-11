@@ -19,4 +19,5 @@ sample = [first + timedelta(days=random.randint(0, days)) for _ in range(600)]
 
 plt.figure(figsize=(12, 6))
 plt.hist(sample, bins=days + 1, edgecolor="black")
+plt.title("Histogram on Dates")
 plt.show()
