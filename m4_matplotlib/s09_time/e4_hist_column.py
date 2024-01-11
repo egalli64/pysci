@@ -5,7 +5,7 @@ https://github.com/egalli64/pysci
 
 Module 4 - Matplotlib
 
-Draw a simple histogram with dates from a DataFrame column
+A simple histogram with dates from a DataFrame column
 Requires taxis.csv from https://github.com/mwaskom/seaborn-data
 """
 import matplotlib.pyplot as plt
