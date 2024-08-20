@@ -1,0 +1,5 @@
+Data Analysis
+
+p1: Read data
+p2: Data wrangling
+p3: Exploratory Data Analysis
