@@ -1,4 +1,7 @@
-/.venv/
+# multiple venv folders
+/.venv*/
+
 /data/
 !/data/headerless.csv
+
 __pycache__/
