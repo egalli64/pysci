@@ -5,16 +5,10 @@ https://github.com/egalli64/pysci
 
 Module 1 - NumPy
 
-Array - split
+split() on 2D array
 """
+
 import numpy as np
-
-a = np.arange(9)
-print("An array", a)
-
-print("A standard three-way split:", np.split(a, 3))
-print("A custom three-way split (at 2 and 7):", np.split(a, (2, 7)))
-print()
 
 m = np.arange(16).reshape((4, 4))
 print(f"A two-dimension array shaped {m.shape}:\n", m)
