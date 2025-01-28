@@ -5,7 +5,7 @@ https://github.com/egalli64/pysci
 
 Module 1 - NumPy
 
-More Universal Functions
+Math Universal Functions
 
 Logarithmic
 """
