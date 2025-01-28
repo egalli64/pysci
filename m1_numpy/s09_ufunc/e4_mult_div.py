@@ -17,7 +17,9 @@ b = np.concatenate((np.random.randint(-6, 0, size=3), np.random.randint(1, 7, si
 print("The arrays a and b are", a, b)
 
 print("a * b:", a * b)
+print("3 * a:", 3 * a)
 print("multiply() on a and b:", np.multiply(a, b))
+print("multiply() on a and 3:", np.multiply(a, 3))
 
 print("a / b:", a / b)
 print("divide() on a and b:", np.divide(a, b))
