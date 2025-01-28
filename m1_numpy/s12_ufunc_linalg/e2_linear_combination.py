@@ -5,10 +5,11 @@ https://github.com/egalli64/pysci
 
 Module 1 - NumPy
 
-More Universal Functions
+Linear algebra
 
 Linear combination
 """
+
 import numpy as np
 
 a = np.arange(1, 4)
