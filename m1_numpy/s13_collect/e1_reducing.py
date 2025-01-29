@@ -9,21 +9,24 @@ Universal Functions
 
 Reducing
 """
+
 import numpy as np
 
 a = np.arange(1, 7)
 
-print(f"Reducing {a} by add() gives", np.add.reduce(a))
-print(f"Reducing {a} by divide() gives", np.divide.reduce(a))
+print(f"On {a} add.reduce(): {np.add.reduce(a)}, divide.reduce():", np.divide.reduce(a))
 
-print(f"Sum is {a.sum()} and prod is {a.prod()}")
-print(f"Min is {a.min()} at {a.argmin()}, max is {a.max()} at {a.argmax()}")
-print(f"Mean is {a.mean():.2f}, std dev {a.std():.2f}, variance {a.var():.2f}")
+print(f"sum() gives {a.sum()} and prod() gives {a.prod()}")
+print(f"min() gives {a.min()} at {a.argmin()} - by argmin()")
+print(f"max() gives {a.max()} at {a.argmax()} - by argmax()")
+print(f"mean() gives {a.mean():.2f}, std() {a.std():.2f}, var() {a.var():.2f}")
 
-print("\nIs _any_ element even?", np.any(a % 2 == 0))
-print("Is _any_ element even (by reduce)?", np.logical_or.reduce(a % 2 == 0))
-print("Are _all_ elements even?", np.all(a % 2 == 0))
-print("Are _all_ elements even (by reduce)?", np.logical_and.reduce(a % 2 == 0))
+print("\nIs there _any_ even element (ufunc)?", np.any(a % 2 == 0))
+print("Is there _any_ even element (array method)?", (a % 2 == 0).any())
+print("Is _any_ element even (reduce)?", np.logical_or.reduce(a % 2 == 0))
+print("Are _all_ elements even (ufunc)?", np.all(a % 2 == 0))
+print("Are _all_ elements even (array method)?", (a % 2 == 0).all())
+print("Are _all_ elements even (reduce)?", np.logical_and.reduce(a % 2 == 0))
 print()
 
 m = np.random.random((2, 3))
