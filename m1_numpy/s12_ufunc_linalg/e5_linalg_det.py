@@ -3,10 +3,11 @@ Python and Science
 
 https://github.com/egalli64/pysci
 
-Module 1 - NumPy
+Linear algebra
 
 linalg - determinant
 """
+
 import numpy as np
 from numpy import linalg as la
 
