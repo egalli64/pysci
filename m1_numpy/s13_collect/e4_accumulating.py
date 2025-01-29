@@ -9,13 +9,16 @@ Universal Functions
 
 Accumulating
 """
+
 import numpy as np
 
 a = np.arange(1, 7)
 
-print(f"Cumulative sum on {a} is", np.add.accumulate(a))
-print(f"Cumulative division on {a} is", np.divide.accumulate(a))
-print(f"cumsum() gives {a.cumsum()}, cumprod gives {a.cumprod()}")
+print(f"Passing {a} add.accumulate() gives", np.add.accumulate(a))
+print(f" ... and divide.accumulate(a) gives", np.divide.accumulate(a))
+print(f"Calling cumsum() on the array gives {a.cumsum()}")
+print(f" ... and cumprod() gives {a.cumprod()}")
+print()
 
 m = np.random.random((2, 3))
 print(m, "a two dimension array")
