@@ -7,6 +7,7 @@ Module 1 - NumPy
 
 Broadcasting a scalar
 """
+
 import numpy as np
 
 # adding two same sized arrays
