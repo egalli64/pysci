@@ -7,6 +7,7 @@ Module 2 - SciPy
 
 Linear Algebra - norm
 """
+
 import numpy as np
 from scipy import linalg as la
 
