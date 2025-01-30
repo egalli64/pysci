@@ -7,6 +7,7 @@ Module 2 - SciPy
 
 Integration - quad
 """
+
 from scipy import integrate
 
 
