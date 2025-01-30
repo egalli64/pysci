@@ -7,6 +7,7 @@ Module 2 - SciPy
 
 Optimization - minimize - Nelder-Mead
 """
+
 import numpy as np
 from scipy.optimize import minimize
 

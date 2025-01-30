@@ -7,6 +7,7 @@ Module 2 - SciPy
 
 Interpolation - 1-D - Cubic spline
 """
+
 import numpy as np
 from scipy.interpolate import CubicSpline
 
@@ -15,12 +16,12 @@ ys = [1, 4, 8, 16, 25, 36]
 
 print("The passed points:")
 for p in zip(xs, ys):
-    print(p)
+    print(f"({p[0]}, {p[1]})")
 
 c_spline = CubicSpline(xs, ys)
 
 print(c_spline(2.5))
 
-print("Some interpolate points:")
+print("\nSome interpolate points:")
 for x in np.arange(1.5, 6):
-    print(f"{x}, {c_spline(x):.2f}")
+    print(f"({x}, {c_spline(x):.2f})")

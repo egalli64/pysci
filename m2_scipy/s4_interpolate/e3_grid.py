@@ -7,6 +7,7 @@ Module 2 - SciPy
 
 Interpolation - N-D - RegularGridInterpolator
 """
+
 import numpy as np
 from scipy.interpolate import RegularGridInterpolator
 
@@ -25,6 +26,7 @@ coordinates = np.meshgrid(np.linspace(0, 3, 80), np.linspace(0, 3, 80), indexing
 
 true_values = func(*coordinates)
 print(true_values[1], "row 1 of true values")
+print()
 
 test_points = np.array([coordinates[0].ravel(), coordinates[1].ravel()]).T
 
