@@ -8,6 +8,7 @@ Module 3 - pandas
 Some stats
 Requires iris.csv from https://github.com/mwaskom/seaborn-data
 """
+
 import pandas as pd
 import numpy as np
 
