@@ -7,6 +7,7 @@ Module 3 - pandas
 
 DataFrame
 """
+
 import pandas as pd
 import numpy as np
 
