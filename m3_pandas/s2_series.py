@@ -7,6 +7,7 @@ Module 3 - pandas
 
 Series
 """
+
 import pandas as pd
 
 # from list to series
