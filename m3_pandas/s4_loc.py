@@ -8,6 +8,7 @@ Module 3 - pandas
 Accessing data by loc and iloc
 Requires iris.csv from https://github.com/mwaskom/seaborn-data
 """
+
 import pandas as pd
 
 iris = pd.read_csv("data/iris.csv")
