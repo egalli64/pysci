@@ -13,7 +13,7 @@ import pandas as pd
 # url =  "http://archive.ics.uci.edu/ml/machine-learning-databases/autos/imports-85.data"
 
 # or, locally stored
-url = "data/imports-85.data"
+url = "data/imports-85.csv"
 
 # the dataset has no header, provide it by hand
 headers = [
